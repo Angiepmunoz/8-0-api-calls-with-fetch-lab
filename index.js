@@ -13,6 +13,7 @@ form.addEventListener("submit", (e) => {
         card.remove();
       });
       createCards(json);
+      //   creatAnswerButtonEvent();
     })
     .catch((e) => console.log(e));
 });
@@ -43,9 +44,16 @@ const createCards = (js) => {
     main.append(article);
 
     answerButton.addEventListener("click", (e) => {
-       answerP.classList.toggle("hidden");
-      });
+      answerP.classList.toggle("hidden");
+    });
   }
 };
 
-
+// const creatAnswerButtonEvent = (button) => {
+//   document.querySelectorAll(".reveal-answer").forEach((button) => {
+//     button.addEventListener("click", (e) => {
+//       // e.preventDefault()
+//       button.parentNode.querySelector(".hidden").classList.toggle("hidden");
+//     });
+//   });
+// };
