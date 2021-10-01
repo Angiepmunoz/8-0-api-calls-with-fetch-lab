@@ -58,6 +58,11 @@ button:hover {
   background: #5c946e;
 }
 
+/* form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+} */
+
 .card {
   border: 3px solid #4f7d5d;
   padding: 25px;
